@@ -1,16 +1,36 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
+font-family: 'Lilita One';
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
   background-image: linear-gradient(to right, #870000, #190a05);
+  animation: AnimateBG 4s infinite ease-in-out;
+
 
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+
 }
+
+@keyframes AnimateBG {
+
+  from
+  {
+    background-image: linear-gradient(to right, #630000, #190a05);
+  }
+
+  to
+  {
+    background-image: linear-gradient(to left,  #630000, #190a05);
+  }
+}
+
+
